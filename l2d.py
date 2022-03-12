@@ -11,10 +11,10 @@ import json
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi(os.environ['pxtWV+1/jdVPs9tRXpxzwsndJpxkuGbLSwiOJyPWF/NLwfVHR0ZWy2RCUpLi2iZyX0j1QtBhTs0pTyCWiXZ9qI2oLfGqenC+t9/p0ZlMxJxbXCPbQH8X/7La+DA9CyZd2ezuH2DQ1UT8PDMyxAUxxAdB04t89/1O/w1cDnyilFU='])
-handler = WebhookHandler(os.environ['b3eae7c2febd15b0054199a3ce6ab266'])
+line_bot_api = LineBotApi(os.environ['LINEBOT_ACCESS_TOKEN'])
+handler = WebhookHandler(os.environ['LINEBOT_SECRET'])
 
-discord_webhook = os.environ['https://discord.com/api/webhooks/952110323442266153/lG68Z6xxxd0GJO5CJcfjz3lkZkMGb_nUWI81_VoAVhDZA8jT7Cb_s2-RmzmhqVM_Cuw8']
+discord_webhook = os.environ['DISCORD_WEBHOOK']
 
 @app.route("/")
 def root():

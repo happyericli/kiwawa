@@ -7,9 +7,9 @@ import os
 import json
 
 bot = commands.Bot(command_prefix='>')
-discordbot_token = os.environ['OTUyMTA2MzQwODEyMTkzNzky.YixMIA.3IGNhtPWGRYpOW4Rk_Kk_Kfj2-0']
-lotify_token = os.environ['bf05e9bEGf5AwJxsqnTWZ1MtJqJwdmaQ5URYZfziPoh']
-discord_webhook_id = int(os.environ['https://discord.com/api/webhooks/952110323442266153/lG68Z6xxxd0GJO5CJcfjz3lkZkMGb_nUWI81_VoAVhDZA8jT7Cb_s2-RmzmhqVM_Cuw8'].split('/')[-2])
+discordbot_token = os.environ['DISCORDBOT_TOKEN']
+lotify_token = os.environ['LOTIFY_TOKEN']
+discord_webhook_id = int(os.environ['DISCORD_WEBHOOK'].split('/')[-2])
 lotify = Client()
 
 @bot.command()
